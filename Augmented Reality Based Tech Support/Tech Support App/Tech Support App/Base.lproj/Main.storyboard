@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HWA-7e-9HB">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zAP-FS-L9y">
+            <objects>
+                <viewController id="HWA-7e-9HB" customClass="ViewController" customModule="Tech_Support_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tDr-iZ-DoB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sja-dg-XVG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtN-Qq-qLH">
+                                <rect key="frame" x="0.0" y="782" width="414" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyv-im-4Yo">
+                                        <rect key="frame" x="177" y="10" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="FsV-D4-XX0"/>
+                                            <constraint firstAttribute="height" constant="60" id="JjO-Px-ifh"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="refresh"/>
+                                        <state key="selected" backgroundImage="refresh"/>
+                                        <state key="highlighted" backgroundImage="refresh"/>
+                                        <connections>
+                                            <action selector="refreshScreenButton:" destination="HWA-7e-9HB" eventType="touchUpInside" id="F8G-6a-c5k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XE-OQ-J10">
+                                        <rect key="frame" x="87" y="10" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="RDK-mJ-KzX"/>
+                                            <constraint firstAttribute="width" constant="60" id="YA5-1g-qj6"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="delete"/>
+                                        <state key="selected" backgroundImage="delete"/>
+                                        <state key="highlighted" backgroundImage="delete"/>
+                                        <connections>
+                                            <action selector="clearObjectButton:" destination="HWA-7e-9HB" eventType="touchUpInside" id="XIM-gS-UXe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOI-g9-Tnk">
+                                        <rect key="frame" x="267" y="10" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="HEY-za-k2Z"/>
+                                            <constraint firstAttribute="width" constant="60" id="MXQ-cy-cMm"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="torch"/>
+                                        <state key="selected" backgroundImage="torch"/>
+                                        <state key="highlighted" backgroundImage="torch"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jyv-im-4Yo" firstAttribute="centerX" secondItem="LtN-Qq-qLH" secondAttribute="centerX" id="0cl-bY-hja"/>
+                                    <constraint firstItem="jyv-im-4Yo" firstAttribute="centerY" secondItem="LtN-Qq-qLH" secondAttribute="centerY" id="2pb-hB-GJU"/>
+                                    <constraint firstItem="8XE-OQ-J10" firstAttribute="centerY" secondItem="jyv-im-4Yo" secondAttribute="centerY" id="495-Yf-v6d"/>
+                                    <constraint firstAttribute="height" constant="80" id="6Df-UY-aYz"/>
+                                    <constraint firstItem="MOI-g9-Tnk" firstAttribute="leading" secondItem="jyv-im-4Yo" secondAttribute="trailing" constant="30" id="Lpp-Rk-x9a"/>
+                                    <constraint firstItem="MOI-g9-Tnk" firstAttribute="centerY" secondItem="jyv-im-4Yo" secondAttribute="centerY" id="bO2-MY-27i"/>
+                                    <constraint firstItem="jyv-im-4Yo" firstAttribute="leading" secondItem="8XE-OQ-J10" secondAttribute="trailing" constant="30" id="kGj-mA-gzM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sja-dg-XVG" firstAttribute="bottom" secondItem="ZZ1-QG-jtx" secondAttribute="bottom" id="9dK-nF-ad3"/>
+                            <constraint firstItem="ZZ1-QG-jtx" firstAttribute="bottom" secondItem="LtN-Qq-qLH" secondAttribute="bottom" id="9uh-BK-2RW"/>
+                            <constraint firstItem="sja-dg-XVG" firstAttribute="leading" secondItem="ZZ1-QG-jtx" secondAttribute="leading" id="I7Y-xG-ZAd"/>
+                            <constraint firstItem="LtN-Qq-qLH" firstAttribute="leading" secondItem="ZZ1-QG-jtx" secondAttribute="leading" id="LDE-lA-oId"/>
+                            <constraint firstItem="sja-dg-XVG" firstAttribute="top" secondItem="ZZ1-QG-jtx" secondAttribute="top" id="RCu-La-Eri"/>
+                            <constraint firstItem="LtN-Qq-qLH" firstAttribute="trailing" secondItem="ZZ1-QG-jtx" secondAttribute="trailing" id="YXa-I6-kQ6"/>
+                            <constraint firstItem="ZZ1-QG-jtx" firstAttribute="trailing" secondItem="sja-dg-XVG" secondAttribute="trailing" id="va5-gK-TIb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZZ1-QG-jtx"/>
+                    </view>
+                    <connections>
+                        <outlet property="clearObjectButton" destination="8XE-OQ-J10" id="gE1-ph-D9d"/>
+                        <outlet property="refreshScreenButton" destination="jyv-im-4Yo" id="zn6-Gp-agy"/>
+                        <outlet property="screenImageView" destination="sja-dg-XVG" id="2He-lw-wwG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VM4-wR-iJd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete" width="71" height="71"/>
+        <image name="refresh" width="71" height="71"/>
+        <image name="torch" width="71" height="71"/>
+    </resources>
+</document>
